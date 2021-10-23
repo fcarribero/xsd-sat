@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:catRecursosGastos="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/IdeRecMinGast" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/IdeRecMinGast" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+  <xs:simpleType name="c_TipoOperacion">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse"/>
+      <xs:enumeration value="a"/>
+      <xs:enumeration value="b"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="c_AcuerdoGasto">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse"/>
+      <xs:enumeration value="a"/>
+      <xs:enumeration value="b"/>
+	  </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

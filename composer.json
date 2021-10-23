@@ -1,0 +1,10 @@
+{
+  "name": "webneex/xsd-sat",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+  },
+  "classmap": [
+    "src/"
+  ]
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:advans="http://www.advans.mx/adicionales" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.advans.mx/adicionales" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="Adicionales">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Retenciones">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Retencion" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="tipo">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:minLength value="1"/>
+                                                <xs:maxLength value="60"/>
+                                                <xs:whiteSpace value="collapse"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="importe" type="advans:t_Importe" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Cargos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Cargo" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="tipo" use="optional">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:minLength value="1"/>
+                                                <xs:maxLength value="60"/>
+                                                <xs:whiteSpace value="collapse"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="importe" type="advans:t_Importe" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="DatosAdicionales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Dato" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="nombre" use="optional">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:minLength value="1"/>
+                                                <xs:whiteSpace value="collapse"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="valor" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:minLength value="1"/>
+                                                <xs:whiteSpace value="collapse"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="version" use="required" fixed="1.0">
+                <xs:annotation>
+                    <xs:documentation>Atributo requerido con valor prefijado a 1.0 que indica la versión de la addenda.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:whiteSpace value="collapse"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="totalFinal" use="required" type="advans:t_Importe">
+                <xs:annotation>
+                    <xs:documentation>Atributo requerido para indicar el importe final a pagar.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="t_Importe">
+        <xs:annotation>
+            <xs:documentation>Tipo definido para expresar importes numéricos con fracción hasta seis decimales</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="6"/>
+            <xs:whiteSpace value="collapse"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

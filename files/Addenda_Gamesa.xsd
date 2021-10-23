@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.sat.gob.mx/cfd/2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" targetNamespace="http://www.sat.gob.mx/cfd/2">
+	<xs:element name="NotadeEntrega">
+		<xs:annotation>
+			<xs:documentation>
+				Atributo opcional que especifica la Nota de Entrega de recepción de materiales
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="10"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="OrdendeCompra">
+		<xs:annotation>
+			<xs:documentation>
+				Atributo requerido para representar la orden de compra
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="10"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="AddendaCFDServicios">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="OrdendeCompra"/>
+				<xs:element ref="NotadeEntrega" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="TipoDocumento" use="required">
+				<xs:annotation>
+					<xs:documentation>
+						Atributo requerido para representar el tipo de comprobante, 1 Factura, 2 Nota de Cargo, 3 Nota de credito 
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Version" use="required">
+				<xs:annotation>
+					<xs:documentation>
+						Atributo requerido para representar la versión del esquema utilizado
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (Soluciones Advans, S.A. de C.V.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:advans="http://www.advans.mx/adicionales" targetNamespace="http://www.advans.mx/adicionales" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="Adicionales">
+        <xs:annotation>
+            <xs:documentation>Datos adicionales de Advans</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Concepto" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>Datos adicionales por partida</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:attribute name="Indice"/>
+                        <xs:attribute name="_1"/>
+                        <xs:attribute name="_2"/>
+                        <xs:attribute name="_3"/>
+                        <xs:attribute name="_4"/>
+                        <xs:attribute name="_5"/>
+                        <xs:attribute name="_6"/>
+                        <xs:attribute name="_7"/>
+                        <xs:attribute name="_8"/>
+                        <xs:attribute name="_9"/>
+                        <xs:attribute name="_10"/>
+                        <xs:attribute name="_11"/>
+                        <xs:attribute name="_12"/>
+                        <xs:attribute name="_13"/>
+                        <xs:attribute name="_14"/>
+                        <xs:attribute name="_15"/>
+                        <xs:attribute name="_16"/>
+                        <xs:attribute name="_17"/>
+                        <xs:attribute name="_18"/>
+                        <xs:attribute name="_19"/>
+                        <xs:attribute name="_20"/>
+                        <xs:attribute name="_21"/>
+                        <xs:attribute name="_22"/>
+                        <xs:attribute name="_23"/>
+                        <xs:attribute name="_24"/>
+                        <xs:attribute name="_25"/>
+                        <xs:attribute name="_26"/>
+                        <xs:attribute name="_27"/>
+                        <xs:attribute name="_28"/>
+                        <xs:attribute name="_29"/>
+                        <xs:attribute name="_30"/>
+                        <xs:attribute name="_31"/>
+                        <xs:attribute name="_32"/>
+                        <xs:attribute name="_33"/>
+                        <xs:attribute name="_34"/>
+                        <xs:attribute name="_35"/>
+                        <xs:attribute name="_36"/>
+                        <xs:attribute name="_37"/>
+                        <xs:attribute name="_38"/>
+                        <xs:attribute name="_39"/>
+                        <xs:attribute name="_40"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Version" type="xs:string" use="optional"/>
+            <xs:attribute name="InformacionAdicional" type="xs:string" use="optional"/>
+            <xs:attribute name="ReceptorCalle" type="xs:string" use="optional"/>
+            <xs:attribute name="ReceptorColonia" type="xs:string" use="optional"/>
+            <xs:attribute name="ReceptorLocalidad" type="xs:string" use="optional"/>
+            <xs:attribute name="ReceptorPais" type="xs:string" use="optional"/>
+            <xs:attribute name="ReceptorCodigoPostal" type="xs:string" use="optional"/>
+            <xs:attribute name="ReceptorEstado" type="xs:string" use="optional"/>
+            <xs:attribute name="ReceptorTelefono" type="xs:string" use="optional"/>
+            <xs:attribute name="EmisorCalle" type="xs:string" use="optional"/>
+            <xs:attribute name="EmisorColonia" type="xs:string" use="optional"/>
+            <xs:attribute name="EmisorLocalidad" type="xs:string" use="optional"/>
+            <xs:attribute name="EmisorPais" type="xs:string" use="optional"/>
+            <xs:attribute name="EmisorCodigoPostal" type="xs:string" use="optional"/>
+            <xs:attribute name="EmisorEstado" type="xs:string" use="optional"/>
+            <xs:attribute name="EmisorTelefono" type="xs:string" use="optional"/>
+            <xs:attribute name="_1" type="xs:string" use="optional"/>
+            <xs:attribute name="_2" type="xs:string" use="optional"/>
+            <xs:attribute name="_3" type="xs:string" use="optional"/>
+            <xs:attribute name="_4" type="xs:string" use="optional"/>
+            <xs:attribute name="_5" type="xs:string" use="optional"/>
+            <xs:attribute name="_6" type="xs:string" use="optional"/>
+            <xs:attribute name="_7" type="xs:string" use="optional"/>
+            <xs:attribute name="_8" type="xs:string" use="optional"/>
+            <xs:attribute name="_9" type="xs:string" use="optional"/>
+            <xs:attribute name="_10" type="xs:string" use="optional"/>
+            <xs:attribute name="_11" type="xs:string" use="optional"/>
+            <xs:attribute name="_12" type="xs:string" use="optional"/>
+            <xs:attribute name="_13" type="xs:string" use="optional"/>
+            <xs:attribute name="_14" type="xs:string" use="optional"/>
+            <xs:attribute name="_15" type="xs:string" use="optional"/>
+            <xs:attribute name="_16" type="xs:string" use="optional"/>
+            <xs:attribute name="_17" type="xs:string" use="optional"/>
+            <xs:attribute name="_18" type="xs:string" use="optional"/>
+            <xs:attribute name="_19" type="xs:string" use="optional"/>
+            <xs:attribute name="_20" type="xs:string" use="optional"/>
+            <xs:attribute name="_21"/>
+            <xs:attribute name="_22"/>
+            <xs:attribute name="_23"/>
+            <xs:attribute name="_24"/>
+            <xs:attribute name="_25"/>
+            <xs:attribute name="_26"/>
+            <xs:attribute name="_27"/>
+            <xs:attribute name="_28"/>
+            <xs:attribute name="_29"/>
+            <xs:attribute name="_30"/>
+            <xs:attribute name="_31"/>
+            <xs:attribute name="_32"/>
+            <xs:attribute name="_33"/>
+            <xs:attribute name="_34"/>
+            <xs:attribute name="_35"/>
+            <xs:attribute name="_36"/>
+            <xs:attribute name="_37"/>
+            <xs:attribute name="_38"/>
+            <xs:attribute name="_39"/>
+            <xs:attribute name="_40"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

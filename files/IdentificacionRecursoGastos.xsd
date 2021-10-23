@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:IRMGCT="http://www.sat.gob.mx/IdeRecMinGast" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sat.gob.mx/IdeRecMinGast" xmlns:catRecursosGastos="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/IdeRecMinGast" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/IdeRecMinGast" schemaLocation="catRecursosGastos.xsd"/>
+  <xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" schemaLocation="tdCFDI.xsd"/>
+  <xs:element name="IdentificacionDeRecurso">
+    <xs:annotation>
+      <xs:documentation>Complemento para incorporar al Comprobante Fiscal Digital por Internet (CFDI), para registrar información que identifique el recurso entregado a un tercero, para realizar operaciones a cuenta de un contribuyente.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DispersionDelRecurso" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Nodo condicional para registrar la información detallada de la administración del recurso entregado por el contribuyente al tercero.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="NumIdSolicitud" use="optional">
+              <xs:annotation>
+                <xs:documentation>Atributo opcional para expresar el número de identificación de la solicitud con la cual el cliente solicita el servicio de dispersión.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="50"/>
+                  <xs:whiteSpace value="collapse"/>
+                  <xs:pattern value="[^|]{1,50}"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="FechaDeIdent" use="required" type="tdCFDI:t_Fecha">
+              <xs:annotation>
+                <xs:documentation>Atributo requerido para expresar la fecha en que se realizó la solicitud para la dispersión del recurso.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IdentificacionDelGasto" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Nodo condicional para registrar la información detallada de los gastos realizados por el tercero con recursos del contribuyente.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="AcuerdoGasto" use="required" type="catRecursosGastos:c_AcuerdoGasto">
+              <xs:annotation>
+                <xs:documentation>Atributo requerido para expresar si el recurso se entrega previo al gasto o si efectuado el gasto se cubre el mismo con posterioridad.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="UUID" use="optional">
+              <xs:annotation>
+                <xs:documentation>Atributo opcional para expresar el folio fiscal del comprobante que ampara el gasto, cuando el gasto se documente con un CFDI.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:whiteSpace value="collapse"/>
+                  <xs:length value="36"/>
+                  <xs:pattern value="[a-f0-9A-F]{8}-[a-f0-9A-F]{4}-[a-f0-9A-F]{4}-[a-f0-9A-F]{4}-[a-f0-9A-F]{12}"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="NumFolioDoc" use="optional">
+              <xs:annotation>
+                <xs:documentation>Atributo opcional para expresar el número de folio o número de operación al documento que ampara pagos realizados a dependencias de gobierno, cuando el gasto no se encuentra contenido en un CFDI.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:whiteSpace value="collapse"/>
+                  <xs:maxLength value="40"/>
+                  <xs:minLength value="1"/>
+                  <xs:pattern value="[^|]{1,40}"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="FechaDeGasto" use="optional" type="tdCFDI:t_Fecha">
+              <xs:annotation>
+                <xs:documentation>Atributo condicional para expresar la fecha en que se realizó el gasto cuando se registró información en el campo NumFolioDoc.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="DescripcionGasto" use="optional">
+              <xs:annotation>
+                <xs:documentation>Atributo opcional para describir el bien o servicio cubierto con la erogación, cuando el gasto no se encuentra contenido en un CFDI.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:whiteSpace value="collapse"/>
+                  <xs:maxLength value="1000"/>
+                  <xs:minLength value="1"/>
+                  <xs:pattern value="[^|]{1,1000}"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="ImporteGasto" use="optional" type="tdCFDI:t_Importe">
+              <xs:annotation>
+                <xs:documentation>Atributo condicional para expresar el monto total del gasto que se identificó en el campo NumFolioDoc.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Version" use="required" fixed="1.0">
+        <xs:annotation>
+          <xs:documentation>Atributo requerido que indica la versión del complemento.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="collapse"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="TipoOperacion" use="required" type="catRecursosGastos:c_TipoOperacion">
+        <xs:annotation>
+          <xs:documentation>Atributo requerido para expresar el tipo de operación por la cual se realiza la erogación o la dispersión del recurso.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="MontoEntregado" use="required" type="tdCFDI:t_Importe">
+        <xs:annotation>
+          <xs:documentation>Atributo requerido para expresar el monto entregado por el tercero para su dispersión o la realización de erogaciones.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="FechaDep" use="required" type="tdCFDI:t_Fecha">
+        <xs:annotation>
+          <xs:documentation>Atributo requerido para expresar la fecha en que se realizó la entrega del recurso.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Remanente" use="optional" type="tdCFDI:t_Importe">
+        <xs:annotation>
+          <xs:documentation>Atributo opcional para expresar el monto del remanente, se debe registrar si hay remanente.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="ReintegroRemanente" use="optional" type="tdCFDI:t_Importe">
+        <xs:annotation>
+          <xs:documentation>Atributo condicional para expresar el monto del remanente que se ha reintegrado al contribuyente, se vuelve requerido cuando se registre el campo Remanente.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="ReintegroRemanFecha" use="optional" type="tdCFDI:t_Fecha">
+        <xs:annotation>
+          <xs:documentation>Atributo condicional para expresar la fecha en que se ha hecho el reintegro al contribuyente, se vuelve requerido cuando se registre el campo ReintegroRemanente.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

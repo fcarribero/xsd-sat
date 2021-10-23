@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.sat.gob.mx/vc" targetNamespace="http://www.sat.gob.mx/vc" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="VentaCombustible">
+        <xs:annotation>
+            <xs:documentation>Nodo opcional para definir los datos requeridos cuando se enajenen combustibles en establecimientos abiertos al público en general.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:attribute name="tipoOperacion" use="required">
+                <xs:annotation>
+                    <xs:documentation>Atributo requerido para expresar el tipo de operación de acuerdo con el medio de pago.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:whiteSpace value="collapse"/>
+                        <xs:minLength value="1"/>
+                        <xs:enumeration value="Efectivo"/>
+                        <xs:enumeration value="Cheque"/>
+                        <xs:enumeration value="Tarjeta"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="claveEstacion" use="required">
+                <xs:annotation>
+                    <xs:documentation>Atributo opcional  para expresar la clave de cliente de la estación de servicio, a 10 caracteres, cuando sea requerido.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:whiteSpace value="collapse"/>
+                        <xs:minLength value="1"/>
+                        <xs:maxLength value="10"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="claveProducto" use="required">
+                <xs:annotation>
+                    <xs:documentation>Atributo opcional para expresar la clave de producto, a 5 caracteres, cuando sea requerido.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:whiteSpace value="collapse"/>
+                        <xs:minLength value="1"/>
+                        <xs:maxLength value="5"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="numPermiso" use="required">
+                <xs:annotation>
+                    <xs:documentation>Atributo opcional para definir el número de permiso otorgado por la Secretaría de Energía.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="1"/>
+                        <xs:whiteSpace value="collapse"/>
+                        <xs:maxLength value="20"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="oficioInicioOperaciones" use="required">
+                <xs:annotation>
+                    <xs:documentation>Atributo opcional para definir el número de oficio de inicio de operaciones otorgado por la Secretaría de Energía.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="1"/>
+                        <xs:whiteSpace value="collapse"/>
+                        <xs:maxLength value="20"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="folioSimplificado" use="required">
+                <xs:annotation>
+                    <xs:documentation>Atributo opcional para la expresión del folio del comprobante simplificado amparado por la operación</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="1"/>
+                        <xs:whiteSpace value="collapse"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
