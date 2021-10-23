@@ -3,6 +3,8 @@
   "license": "MIT",
   "type": "library",
   "require": {
+    "ext-libxml": "*",
+    "ext-dom": "*"
   },
   "classmap": [
     "src/"
