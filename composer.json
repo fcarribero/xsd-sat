@@ -6,7 +6,9 @@
     "ext-libxml": "*",
     "ext-dom": "*"
   },
-  "classmap": [
-    "src/"
-  ]
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
 }
