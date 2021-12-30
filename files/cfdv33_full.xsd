@@ -34,6 +34,7 @@
   <xs:import namespace="http://www.sat.gob.mx/IngresosHidrocarburos10" schemaLocation="IngresosHidrocarburos.xsd"/>
   <xs:import namespace="http://www.sat.gob.mx/IdeRecMinGast" schemaLocation="IdentificacionRecursoGastos.xsd"/>
   <xs:import namespace="http://www.sat.gob.mx/CartaPorte" schemaLocation="CartaPorte.xsd"/>
+  <xs:import namespace="http://www.sat.gob.mx/CartaPorte20" schemaLocation="CartaPorte20.xsd"/>
     <xs:element name="Comprobante">
       <xs:annotation>
         <xs:documentation>Estándar de Comprobante Fiscal Digital por Internet.</xs:documentation>
