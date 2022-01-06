@@ -6,6 +6,11 @@ use DOMDocument;
 
 class SchemaHelpers {
 
+    /**
+     * @param DOMDocument $dom
+     * @param string $schema
+     * @return array|\LibXMLError[]
+     */
     public static function validateDom($dom, $schema) {
 
         if (substr($schema, 0, 2) == './') $schema = __DIR__ . '/../files/' . substr($schema, 2);
@@ -22,6 +27,11 @@ class SchemaHelpers {
         return [];
     }
 
+    /**
+     * @param string $string
+     * @param string $schema
+     * @return array|\LibXMLError[]
+     */
     public static function validateString($string, $schema) {
         $dom = new DOMDocument;
         $dom->loadXML($string);
