@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2010 rel. 3 (x64) (http://www.altova.com) by SAT (SAT) -->
 <xs:schema xmlns:cartaporte20="http://www.sat.gob.mx/CartaPorte20" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" xmlns:catComExt="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/ComExt" xmlns:catCartaPorte="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/CartaPorte" targetNamespace="http://www.sat.gob.mx/CartaPorte20" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" schemaLocation="catCFDI.xsd"/>
 	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" schemaLocation="tdCFDI.xsd"/>
@@ -819,10 +818,10 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:minLength value="6"/>
-												<xs:maxLength value="7"/>
+												<xs:minLength value="7"/>
+												<xs:maxLength value="30"/>
 												<xs:whiteSpace value="collapse"/>
-												<xs:pattern value="[^|]{6,7}"/>
+												<xs:pattern value="[^|]{7,30}"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
