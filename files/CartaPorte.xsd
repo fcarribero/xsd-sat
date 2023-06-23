@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:cartaporte="http://www.sat.gob.mx/CartaPorte" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" xmlns:catComExt="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/ComExt" xmlns:catCartaPorte="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/CartaPorte" targetNamespace="http://www.sat.gob.mx/CartaPorte" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" schemaLocation="catCFDI.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" schemaLocation="tdCFDI.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/ComExt" schemaLocation="catComExt.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/CartaPorte" schemaLocation="catCartaPorte.xsd"/>
+	<xs:import schemaLocation="catCFDI.xsd"/>
+	<xs:import schemaLocation="tdCFDI.xsd"/>
+	<xs:import schemaLocation="catComExt.xsd"/>
+	<xs:import schemaLocation="catCartaPorte.xsd"/>
 	<xs:element name="CartaPorte">
 		<xs:annotation>
 			<xs:documentation>Complemento para incorporar al Comprobante Fiscal Digital por Internet (CFDI), la información relacionada a los bienes o mercancías, ubicaciones de origen, puntos intermedios y destino, así como lo referente al medio por el que se transportan; ya sea por vía terrestre (carretera federal o líneas férreas), aérea, marítima o fluvial; además de incluir el traslado de Hidrocarburos y Petrolíferos.</xs:documentation>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:consumodecombustibles11="http://www.sat.gob.mx/ConsumoDeCombustibles11" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sat.gob.mx/ConsumoDeCombustibles11" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" xmlns:catCombustible="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Combustible" elementFormDefault="qualified" attributeFormDefault="unqualified">
-  <xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" schemaLocation="tdCFDI.xsd"/>
-  <xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Combustible" schemaLocation="catCombustible.xsd"/>
+  <xs:import schemaLocation="tdCFDI.xsd"/>
+  <xs:import schemaLocation="catCombustible.xsd"/>
   <xs:element name="ConsumoDeCombustibles">
     <xs:annotation>
       <xs:documentation>Complemento al Comprobante Fiscal Digital por Internet (CFDI) para integrar la información de consumo de combustibles por monedero electrónico.</xs:documentation>

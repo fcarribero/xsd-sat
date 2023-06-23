@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:premios="http://www.sat.gob.mx/esquemas/retencionpago/1/premios" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:c_retenciones="http://www.sat.gob.mx/esquemas/retencionpago/1/catalogos" targetNamespace="http://www.sat.gob.mx/esquemas/retencionpago/1/premios" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/catalogos" schemaLocation="catRetenciones.xsd"/>
+	<xs:import schemaLocation="catRetenciones.xsd"/>
 	<xs:element name="Premios">
 		<xs:annotation>
 			<xs:documentation>Complemento para expresar los premios obtenidos en un periodo o ejercicio</xs:documentation>

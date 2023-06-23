@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:retenciones="http://www.sat.gob.mx/esquemas/retencionpago/2" xmlns:c_retenciones="http://www.sat.gob.mx/esquemas/retencionpago/1/catalogos" xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" targetNamespace="http://www.sat.gob.mx/esquemas/retencionpago/2" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/catalogos" schemaLocation="catRetenciones.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" schemaLocation="catCFDI.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" schemaLocation="tdCFDI.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/arrendamientoenfideicomiso" schemaLocation="arrendamientoenfideicomiso.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/dividendos" schemaLocation="dividendos.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/enajenaciondeacciones" schemaLocation="enajenaciondeacciones.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/fideicomisonoempresarial" schemaLocation="fideicomisonoempresarial.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/intereses" schemaLocation="intereses.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/intereseshipotecarios" schemaLocation="intereseshipotecarios.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/operacionesconderivados" schemaLocation="operacionesconderivados.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/pagosaextranjeros" schemaLocation="pagosaextranjeros.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/premios" schemaLocation="premios.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/sectorfinanciero" schemaLocation="sectorfinanciero.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/planesderetiro11" schemaLocation="planesderetiro11.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/PlataformasTecnologicas10" schemaLocation="ServiciosPlataformasTecnologicas10.xsd"/>
+	<xs:import schemaLocation="catRetenciones.xsd"/>
+	<xs:import schemaLocation="catCFDI.xsd"/>
+	<xs:import schemaLocation="tdCFDI.xsd"/>
+	<xs:import schemaLocation="arrendamientoenfideicomiso.xsd"/>
+	<xs:import schemaLocation="dividendos.xsd"/>
+	<xs:import schemaLocation="enajenaciondeacciones.xsd"/>
+	<xs:import schemaLocation="fideicomisonoempresarial.xsd"/>
+	<xs:import schemaLocation="intereses.xsd"/>
+	<xs:import schemaLocation="intereseshipotecarios.xsd"/>
+	<xs:import schemaLocation="operacionesconderivados.xsd"/>
+	<xs:import schemaLocation="pagosaextranjeros.xsd"/>
+	<xs:import schemaLocation="premios.xsd"/>
+	<xs:import schemaLocation="sectorfinanciero.xsd"/>
+	<xs:import schemaLocation="planesderetiro11.xsd"/>
+	<xs:import schemaLocation="ServiciosPlataformasTecnologicas10.xsd"/>
 	<xs:element name="Retenciones">
 		<xs:annotation>
 			<xs:documentation>Estándar del Comprobante Fiscal Digital por Internet que ampara retenciones e información de pagos. Los importes se expresan en la moneda de pesos mexicanos (MXN).</xs:documentation>

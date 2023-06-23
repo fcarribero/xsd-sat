@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:pagosaextranjeros="http://www.sat.gob.mx/esquemas/retencionpago/1/pagosaextranjeros" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:c_retenciones="http://www.sat.gob.mx/esquemas/retencionpago/1/catalogos" targetNamespace="http://www.sat.gob.mx/esquemas/retencionpago/1/pagosaextranjeros" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:import namespace="http://www.sat.gob.mx/esquemas/retencionpago/1/catalogos" schemaLocation="catRetenciones.xsd"/>
+	<xs:import schemaLocation="catRetenciones.xsd"/>
 	<xs:element name="Pagosaextranjeros">
 		<xs:annotation>
 			<xs:documentation>Complemento para expresar los pagos que se realizan a residentes en el extranjero</xs:documentation>

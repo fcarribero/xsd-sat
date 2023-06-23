@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" targetNamespace="http://www.sat.gob.mx/cfd/4" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" schemaLocation="catCFDI.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" schemaLocation="tdCFDI.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/EstadoDeCuentaCombustible" schemaLocation="ecc11.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/donat" schemaLocation="donat11.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/divisas" schemaLocation="divisas.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/implocal" schemaLocation="implocal.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/leyendasFiscales" schemaLocation="leyendasFisc.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/pfic" schemaLocation="pfic.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/TuristaPasajeroExtranjero" schemaLocation="TuristaPasajeroExtranjero.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/nomina12" schemaLocation="nomina12.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/registrofiscal" schemaLocation="cfdiregistrofiscal.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/pagoenespecie" schemaLocation="pagoenespecie.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/aerolineas" schemaLocation="aerolineas.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/valesdedespensa" schemaLocation="valesdedespensa.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/consumodecombustibles" schemaLocation="consumodecombustibles.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/notariospublicos" schemaLocation="notariospublicos.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/vehiculousado" schemaLocation="vehiculousado.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/servicioparcialconstruccion" schemaLocation="servicioparcialconstruccion.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/renovacionysustitucionvehiculos" schemaLocation="renovacionysustitucionvehiculos.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/certificadodestruccion" schemaLocation="certificadodedestruccion.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/arteantiguedades" schemaLocation="obrasarteantiguedades.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/ComercioExterior11" schemaLocation="ComercioExterior11.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/ine" schemaLocation="ine11.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/iedu" schemaLocation="iedu.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/ventavehiculos" schemaLocation="ventavehiculos11.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/terceros" schemaLocation="terceros11.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/Pagos20" schemaLocation="Pagos20.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/detallista" schemaLocation="detallista.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/EstadoDeCuentaCombustible12" schemaLocation="ecc12.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/ConsumoDeCombustibles11" schemaLocation="consumodeCombustibles11.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/GastosHidrocarburos10" schemaLocation="GastosHidrocarburos10.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/IngresosHidrocarburos10" schemaLocation="IngresosHidrocarburos.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/IdeRecMinGast" schemaLocation="IdentificacionRecursoGastos.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/CartaPorte" schemaLocation="CartaPorte.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/CartaPorte20" schemaLocation="CartaPorte20.xsd"/>
-	<xs:import namespace="http://www.sat.gob.mx/TimbreFiscalDigital" schemaLocation="TimbreFiscalDigitalv11.xsd"/>
+	<xs:import schemaLocation="catCFDI.xsd"/>
+	<xs:import schemaLocation="tdCFDI.xsd"/>
+	<xs:import schemaLocation="ecc11.xsd"/>
+	<xs:import schemaLocation="donat11.xsd"/>
+	<xs:import schemaLocation="divisas.xsd"/>
+	<xs:import schemaLocation="implocal.xsd"/>
+	<xs:import schemaLocation="leyendasFisc.xsd"/>
+	<xs:import schemaLocation="pfic.xsd"/>
+	<xs:import schemaLocation="TuristaPasajeroExtranjero.xsd"/>
+	<xs:import schemaLocation="nomina12.xsd"/>
+	<xs:import schemaLocation="cfdiregistrofiscal.xsd"/>
+	<xs:import schemaLocation="pagoenespecie.xsd"/>
+	<xs:import schemaLocation="aerolineas.xsd"/>
+	<xs:import schemaLocation="valesdedespensa.xsd"/>
+	<xs:import schemaLocation="consumodecombustibles.xsd"/>
+	<xs:import schemaLocation="notariospublicos.xsd"/>
+	<xs:import schemaLocation="vehiculousado.xsd"/>
+	<xs:import schemaLocation="servicioparcialconstruccion.xsd"/>
+	<xs:import schemaLocation="renovacionysustitucionvehiculos.xsd"/>
+	<xs:import schemaLocation="certificadodedestruccion.xsd"/>
+	<xs:import schemaLocation="obrasarteantiguedades.xsd"/>
+	<xs:import schemaLocation="ComercioExterior11.xsd"/>
+	<xs:import schemaLocation="ine11.xsd"/>
+	<xs:import schemaLocation="iedu.xsd"/>
+	<xs:import schemaLocation="ventavehiculos11.xsd"/>
+	<xs:import schemaLocation="terceros11.xsd"/>
+	<xs:import schemaLocation="Pagos20.xsd"/>
+	<xs:import schemaLocation="detallista.xsd"/>
+	<xs:import schemaLocation="ecc12.xsd"/>
+	<xs:import schemaLocation="consumodeCombustibles11.xsd"/>
+	<xs:import schemaLocation="GastosHidrocarburos10.xsd"/>
+	<xs:import schemaLocation="IngresosHidrocarburos.xsd"/>
+	<xs:import schemaLocation="IdentificacionRecursoGastos.xsd"/>
+	<xs:import schemaLocation="CartaPorte.xsd"/>
+	<xs:import schemaLocation="CartaPorte20.xsd"/>
+	<xs:import schemaLocation="TimbreFiscalDigitalv11.xsd"/>
 	<xs:element name="Comprobante">
 		<xs:annotation>
 			<xs:documentation>Estándar de Comprobante Fiscal Digital por Internet.</xs:documentation>

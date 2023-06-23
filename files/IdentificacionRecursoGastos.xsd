@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:IRMGCT="http://www.sat.gob.mx/IdeRecMinGast" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sat.gob.mx/IdeRecMinGast" xmlns:catRecursosGastos="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/IdeRecMinGast" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" elementFormDefault="qualified" attributeFormDefault="unqualified">
-  <xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/IdeRecMinGast" schemaLocation="catRecursosGastos.xsd"/>
-  <xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" schemaLocation="tdCFDI.xsd"/>
+  <xs:import schemaLocation="catRecursosGastos.xsd"/>
+  <xs:import schemaLocation="tdCFDI.xsd"/>
   <xs:element name="IdentificacionDeRecurso">
     <xs:annotation>
       <xs:documentation>Complemento para incorporar al Comprobante Fiscal Digital por Internet (CFDI), para registrar información que identifique el recurso entregado a un tercero, para realizar operaciones a cuenta de un contribuyente.</xs:documentation>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ieeh="http://www.sat.gob.mx/IngresosHidrocarburos10" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sat.gob.mx/IngresosHidrocarburos10" xmlns:catCEH="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/hidrocarburos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" elementFormDefault="qualified" attributeFormDefault="unqualified">
-  <xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/catalogos/hidrocarburos" schemaLocation="catHidrocarburos.xsd"/>
-  <xs:import namespace="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" schemaLocation="tdCFDI.xsd"/>
+  <xs:import schemaLocation="catHidrocarburos.xsd"/>
+  <xs:import schemaLocation="tdCFDI.xsd"/>
   <xs:element name="IngresosHidrocarburos">
     <xs:annotation>
       <xs:documentation>Complemento para incorporar la información sobre Ingresos atribuibles a los Integrantes de un consorcio derivados de la contraprestación de un contrato de exploración o extracción de hidrocarburos.</xs:documentation>
