@@ -57,7 +57,6 @@ class XSDFiles {
     const CFDV40_IEDU = './cfdv40_iedu.xsd';
     const CFDV40_NOMINAS = './cfdv40_nominas.xsd';
     const CFDV40_PAGOS = './cfdv40_pagos.xsd';
-    const CFDV40_TFD = './cfdv40_tfd.xsd';
     const CONSUMODECOMBUSTIBLES11 = './consumodeCombustibles11.xsd';
     const CONSUMODECOMBUSTIBLES = './consumodecombustibles.xsd';
     const DETALLISTA = './detallista.xsd';
