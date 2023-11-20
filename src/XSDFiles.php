@@ -9,6 +9,7 @@ class XSDFiles {
     const CANCELARET = './CancelaRet.xsd';
     const CARTAPORTE = './CartaPorte.xsd';
     const CARTAPORTE20 = './CartaPorte20.xsd';
+    const CARTAPORTE30 = './CartaPorte30.xsd';
     const CATPLANESDERETIRO = './CatPlanesderetiro.xsd';
     const CATPLATAFORMASTECNOLOGICAS = './CatPlataformasTecnologicas.xsd';
     const COMERCIOEXTERIOR10 = './ComercioExterior10.xsd';
