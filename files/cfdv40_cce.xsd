@@ -3,6 +3,7 @@
 	<xs:import schemaLocation="catCFDI.xsd"/>
 	<xs:import schemaLocation="tdCFDI.xsd"/>
 	<xs:import schemaLocation="ComercioExterior11.xsd"/>
+	<xs:import schemaLocation="ComercioExterior20.xsd"/>
 	<xs:import schemaLocation="TimbreFiscalDigitalv11.xsd"/>
 	<xs:element name="Comprobante">
 		<xs:annotation>

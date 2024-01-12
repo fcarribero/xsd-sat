@@ -22,6 +22,7 @@
 	<xs:import schemaLocation="certificadodedestruccion.xsd"/>
 	<xs:import schemaLocation="obrasarteantiguedades.xsd"/>
 	<xs:import schemaLocation="ComercioExterior11.xsd"/>
+	<xs:import schemaLocation="ComercioExterior20.xsd"/>
 	<xs:import schemaLocation="ine11.xsd"/>
 	<xs:import schemaLocation="iedu.xsd"/>
 	<xs:import schemaLocation="ventavehiculos11.xsd"/>
